@@ -171,7 +171,7 @@ func printDiff(old, new *recipes) {
 			if oldIngredient.Unit != "" || newIngredient.Unit != "" {
 				if oldIngredient.Unit != "" && newIngredient.Unit != "" {
 					if oldIngredient.Unit != newIngredient.Unit {
-						fmt.Printf("CHANGED unit for ingredient \"%s\" for cake  \"%s\" - " +
+						fmt.Printf("CHANGED unit for ingredient \"%s\" for cake  \"%s\" - "+
 							"\"%s\" instead of \"%s\"\n", nameItem, nameCake, newIngredient.Unit,
 							oldIngredient.Unit)
 					}
@@ -184,7 +184,7 @@ func printDiff(old, new *recipes) {
 				}
 			}
 			if oldIngredient.Count != newIngredient.Count {
-				fmt.Printf("CHANGED unit count for ingredient \"%s\" for cake  \"%s\" - " +
+				fmt.Printf("CHANGED unit count for ingredient \"%s\" for cake  \"%s\" - "+
 					"\"%s\" instead of \"%s\"\n", nameItem, nameCake, newIngredient.Count,
 					oldIngredient.Count)
 			}
