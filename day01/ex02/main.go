@@ -25,7 +25,6 @@ func (t *treeFS) Add(filename string, visit bool) bool {
 		return false
 	}
 	add := false
-	filename = filepath.ToSlash(filename)
 	tokens := strings.Split(filename, "/")[1:]
 	for _, token := range tokens {
 		prev := t
