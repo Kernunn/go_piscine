@@ -10,12 +10,12 @@
                     "ingredient_unit": "mugs"
                 },
                 {
-                    "ingredient_name": "Vanilla extract",
-                    "ingredient_count": "2.5"
-                },
-                {
                     "ingredient_name": "Coffee beans",
                     "ingredient_count": "2"
+                },
+                {
+                    "ingredient_name": "Vanilla extract",
+                    "ingredient_count": "2.5"
                 }
             ]
         },
