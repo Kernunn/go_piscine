@@ -1,0 +1,3 @@
+Hi, this is a text in English, there are 17 words
+3 lines
+And 84 English characters
