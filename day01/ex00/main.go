@@ -13,12 +13,7 @@ import (
 type cake struct {
 	Name     string      `xml:"name" json:"name"`
 	Time     string      `xml:"stovetime" json:"time"`
-	Products ingredients `xml:"ingredients" json:"-"`
-	Items    []item      `xml:"-" json:"ingredients"`
-}
-
-type ingredients struct {
-	Items []item `xml:"item"`
+	Items    []item      `xml:"ingredients>item" json:"ingredients"`
 }
 
 type item struct {
@@ -43,9 +38,6 @@ func (r JSONReader) Read(input []byte) (*recipes, error) {
 	if err != nil {
 		return nil, fmt.Errorf("json unmarshalling failure: %v", err)
 	}
-	for i := range recipes.Cake {
-		recipes.Cake[i].Products.Items = recipes.Cake[i].Items
-	}
 	return recipes, nil
 }
 
@@ -56,9 +48,6 @@ func (r XMLReader) Read(input []byte) (*recipes, error) {
 	err := xml.Unmarshal(input, recipes)
 	if err != nil {
 		return nil, fmt.Errorf("xml unmarshalling failure: %v", err)
-	}
-	for i := range recipes.Cake {
-		recipes.Cake[i].Items = recipes.Cake[i].Products.Items
 	}
 	return recipes, nil
 }
