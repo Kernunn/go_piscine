@@ -1,0 +1,10 @@
+https://github.com/elastic/go-elasticsearch/blob/main/_examples/bulk/indexer.go
+https://pkg.go.dev/github.com/elastic/go-elasticsearch@v0.0.0/estransport
+https://pkg.go.dev/github.com/elastic/go-elasticsearch@v0.0.0/esapi#IndicesCreate
+https://pkg.go.dev/github.com/elastic/go-elasticsearch
+https://www.elastic.co/guide/en/elasticsearch/reference/current/explicit-mapping.html
+https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html
+https://drive.google.com/file/d/1DVuYD69AjqzqLjX1OaPUsJS__FJktxNn/view
+https://drive.google.com/file/d/1X0-g8rCdUVTD93ePD8Ch1mXRaVWs5Thx/view
+https://drive.google.com/file/d/1fgJ_bsfH8m0UQU_b2n5nWFHQRdRVfE5y/view
+https://docs.google.com/forms/d/e/1FAIpQLSfPub7KtPiHFO7Hp0V2fPWEOdQZLfpGXy6j_R0EXRZF6TSYpA/viewform
